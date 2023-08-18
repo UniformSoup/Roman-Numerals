@@ -11,11 +11,11 @@ int main(int argc, char* argv[])
         auto str = std::string(argv[i]);
 
         if (std::all_of(str.begin(), str.end(), isdigit))
-            std::cout << str << " in Roman Numerals is " << RomanNumerals::toRomanNumerals(std::stoul(str)) << '\n';
+            std::cout << str << " in Roman Numerals is " << RomanNumerals::toRomanNumerals(std::stoul(str)) << ".\n";
         else if (RomanNumerals::isRomanNumeral(str))
-            std::cout << str << " in Arabic Numerals is " << RomanNumerals::toInteger(str) << '\n';
+            std::cout << str << " in Arabic Numerals is " << RomanNumerals::toInteger(str) << ".\n";
         else
-            std::cout << str << " is invalid input.\n";
+            std::cout << str << " is Invalid Input.\n";
     }
 
     return EXIT_SUCCESS;
